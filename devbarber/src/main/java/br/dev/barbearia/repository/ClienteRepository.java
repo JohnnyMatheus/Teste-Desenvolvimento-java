@@ -1,5 +1,9 @@
 package br.dev.barbearia.repository;
 
-public class ClienteRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import br.dev.barbearia.model.Cliente;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
+	
 }
